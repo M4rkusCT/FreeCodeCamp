@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <title>Videogames</title> 
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Videogames</h1>
+      <p id="description">Please fill out this form with the required information</p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <label id="name-label"> Name:
+          <input id="name" type="text" placeholder="your full name" required/>
+        </label>
+        <label id="email-label"> Email:
+          <input id="email" type="email" placeholder="Your email" required/>
+        </label>
+        <label id="number-label"> Age:
+          <input id="number" type="number" placeholder="Your age" min="15" max="120"/>
+        </label>
+        <label id="select-label"> How many hours do you play per day:
+            <select id="dropdown" required>
+            <option value="">(select one)</option>
+            <option value="1">4h</option>
+            <option value="2">8h</option>
+            <option value="3">16h</option>
+            <option value="4">24h</option>
+            </select>
+        </label>
+        <fieldset>
+            <legend>Choose your platform to play videogames</legend>
+            <label><input type="radio" name="Plataform" value="Consoles" checked/>Consols</label>
+            <label><input type="radio" name="Plataform" value="PC"/>PC</label>
+            <label><input type="radio" name="Plataform" value="Both"/>Both</label>
+        </fieldset>
+        <fieldset>
+            <legend>Choose one or more video game genres, which you like to play</legend>
+            <label><input type="checkbox" value="action" checked/> Action</label>
+            <label><input type="checkbox" value="simulator"/> Simulator</label>
+            <label><input type="checkbox" value="rpg"/> RPG</label>
+           <label><input type="checkbox" value="adventure"> Adventure</label>
+           <label><input type="checkbox" value="Sport"> Sport</label>
+        </fieldset>
+        <textarea cols="50" rows="5" placeholder="If you do not see any genre, which is not on the list please write it here."></textarea>
+        <button id="submit" value="Submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
