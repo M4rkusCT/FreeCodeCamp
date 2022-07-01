@@ -3,3 +3,6 @@
 const magic = () => {
     return new Date();
 };
+
+const data = magic();
+console.log(data);
