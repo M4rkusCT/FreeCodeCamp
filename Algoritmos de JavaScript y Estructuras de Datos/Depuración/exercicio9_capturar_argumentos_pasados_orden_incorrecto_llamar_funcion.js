@@ -2,7 +2,7 @@
 
 function raiseToPower(b, e) {
     return Math.pow(b, e);
-  }
+}
   
 let base = 2;
 let exp = 3;
