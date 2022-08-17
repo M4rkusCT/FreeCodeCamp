@@ -3,8 +3,8 @@
 function uniteUnique(arr) {
     const arrArguments = Array.from(arguments).slice(1);
     let arrNumbers = arrArguments.flat(); // Dentro de un array puede tener varios, se utiliza para unir a solo uno.
-    const newArr = arr.filter((item, val) => arr.indexOf(item) === val);
-    const newArrNumbers = arrNumbers.filter((item,val) => arrNumbers.indexOf(item) === val);
+    const newArr = arr.filter((item, i) => arr.indexOf(item) === i);
+    const newArrNumbers = arrNumbers.filter((item, i) => arrNumbers.indexOf(item) === i);
     const arrResult = newArrNumbers.filter(val => !newArr.includes(val));
     return newArr.concat(arrResult); 
 }
